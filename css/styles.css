@@ -1,0 +1,60 @@
+
+* {padding: 0; margin: 0; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif}
+
+body {background-color: rgb(246, 207, 159);}
+
+@font-face {
+  font-family: 'Dancing Script';
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/dancingscript/v25/If2RXTr6YS-zF4S-kcSWSVi_szLgiuE.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+
+#titulo {text-align: center;  background-color: (246, 207, 159); font-size: 155px; font-family: "Dancing Script";}
+.portada {display: block;
+          margin: 3;
+          padding: auto;}
+
+footer {text-align: center; background-color: gray;}
+
+.parallax {
+    /*"Parallax" se refiere a la imágen del fondo de la página.*/
+    background-image: url("../img/portada.png");
+
+    /*Cambia el tamaño.*/
+    min-height: 500px;
+  
+    /* Crea y modifica la imágen del fondo. */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;}
+
+#indicederecha {float: right; right: 0; position: absolute; margin: 5;}
+
+.letragrande {font-size: 20px;}
+
+#tabla {margin: 3;}
+
+div.scroll {
+    background-color: #333;
+    overflow: auto;
+    white-space: nowrap;
+    padding: 10px;
+  }
+  
+  div.scroll img {
+    padding: 10px;
+  }
+
+  #botonindice {border: 0; font-size: 25px; background-color: rgb(246, 207, 159);}
+  .botonhover:hover {border: 5; background-color: aqua; color: black; font-style: italic; text-decoration: underline;}
+  
+  #vestidoprod {margin: 3; padding: 55px; text-align: center; border-radius: 15px; font-size: 35px;}
+
+  .vestidos {border-top: solid;}
+
+  .vestidoimg {border-radius: 15px; border-style: solid; border: 50px;}
+
+  img {border: 50px}
