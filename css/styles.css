@@ -440,3 +440,40 @@ div.scroll {
   font-weight: bold;
   margin-top: 30px;
 }
+
+/* Estilo para los botones de añadir a favoritos */
+.add-to-favorites {
+  background-color: #8b5e3c;
+  color: #fff;
+  border: none;
+  padding: 5px 10px; /* Reducir el padding */
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 14px; /* Reducir el tamaño de la fuente */
+  transition: background-color 0.3s;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+.add-to-favorites:hover {
+  background-color: #f6cf9f;
+  color: #333;
+}
+
+/* Estilo para los botones de añadir a la cesta */
+.add-to-cart {
+  background-color: #ab4493;
+  color: #fff;
+  border: none;
+  padding: 5px 10px; /* Reducir el padding */
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 14px; /* Reducir el tamaño de la fuente */
+  transition: background-color 0.3s;
+  margin-top: 10px;
+}
+
+.add-to-cart:hover {
+  background-color: #f6cf9f;
+  color: #333;
+}
