@@ -3,6 +3,16 @@
 
 body {background-color: rgb(246, 207, 159);}
 
+/* Animación para el modal */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 @media (max-width: 768px) {
   body {
     font-size: 16px;
@@ -58,11 +68,17 @@ div.scroll {
   #botonindice {border: 0; font-size: 25px; background-color: rgb(246, 207, 159);}
   .botonhover:hover {border: 5; background-color: aqua; color: black; font-style: italic; text-decoration: underline;}
   
-  #vestidoprod {margin: 3; padding: 55px; text-align: center; border-radius: 15px; font-size: 35px;}
+  #vestidoprod {margin: 3; padding: 55px; text-align: center; border-radius: 15px; font-size: 35px; }
 
   .vestidos {border-top: solid;}
 
-  .vestidoimg {border-radius: 15px; border-style: solid; border: 50px;}
+  .vestidoimg {border-radius: 15px; border-style: solid; border: 50px; cursor: pointer;
+    transition: transform 0.3s ease; /* Transición suave */
+    outline: none;}
+
+    .vestidoimg:hover {
+      transform: scale(1.05); /* Aumentar ligeramente la imagen cuando el cursor pase por encima */
+    }
 
   img {border: 50px}
 
@@ -230,3 +246,60 @@ div.scroll {
     color: #fff;
     text-decoration: underline;
   }
+
+  /* Estilos para la galería de imágenes */
+  .image-gallery {
+    width: 100%;
+    margin: 20px auto;
+    border-collapse: collapse; /* Para que las celdas estén pegadas */
+    text-align: center;
+  }
+
+.image-gallery td {
+  padding: 10px;
+}
+
+.modal {
+  display: none; /* Ocultar el modal por defecto */
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8); /* Fondo oscuro */
+  justify-content: center;
+  align-items: center;
+  animation: fadeIn 0.3s ease; /* Animación para que el modal aparezca suavemente */
+}
+
+.modal-content {
+  width: 80%;  /* Tamaño de la imagen en primer plano */
+  max-width: 600px; /* No ocupar toda la pantalla, controlamos el tamaño máximo */
+  transition: transform 0.3s ease; /* Transición suave al abrirse */
+  display: block;
+  margin: auto;
+  transform: scale(0.8); /* Iniciar con un tamaño más pequeño */
+}
+
+.modal.show .modal-content {
+  transform: scale(1); /* Ampliar la imagen a su tamaño original al abrir el modal */
+}
+
+/* Botón de cerrar modal */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: #f1f1f1;
+  text-decoration: none;
+  cursor: pointer;
+}
