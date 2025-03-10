@@ -382,3 +382,61 @@ div.scroll {
   background-color: #f6cf9f;
   color: #333;
 }
+
+/* Estilos para la sección de Favoritos */
+.favoritos-section {
+  margin: 30px auto;
+  padding: 20px;
+  width: 80%;
+  background-color: #fbfbfb;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.favoritos-title {
+  text-align: center;
+  font-size: 30px;
+  color: #8b5e3c;
+  margin-bottom: 20px;
+}
+
+.favoritos-items {
+  margin-bottom: 20px;
+}
+
+.favoritos-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 15px;
+}
+
+.product-info {
+  flex: 1;
+  font-size: 16px;
+}
+
+.remove-button {
+  background-color: #8b5e3c;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.remove-button:hover {
+  background-color: #f6cf9f;
+  color: #333;
+}
+
+.no-favorites {
+  text-align: center;
+  font-size: 18px;
+  color: #8b5e3c;
+  font-weight: bold;
+  margin-top: 30px;
+}

@@ -19,10 +19,54 @@
                     <li><a href="../secciones/costura.html">Costura</a></li>
                 </ul>
             </nav>
+            <!-- Sección de Favoritos -->
+    <div class="favoritos-section">
+        <h2 class="favoritos-title">Tus Favoritos</h2>
+
+        <!-- Lista de productos favoritos -->
+        <div class="favoritos-items">
+            <div class="favoritos-item">
+                <div class="product-info">
+                    <p><strong>Producto:</strong> Vestido Blanco y Negro</p>
+                    <p><strong>Precio:</strong> $50.00</p>
+                </div>
+                <button class="remove-button">Eliminar de Favoritos</button>
+            </div>
+
+            <div class="favoritos-item">
+                <div class="product-info">
+                    <p><strong>Producto:</strong> Vestido Bordado</p>
+                    <p><strong>Precio:</strong> $60.00</p>
+                </div>
+                <button class="remove-button">Eliminar de Favoritos</button>
+            </div>
+
+            <div class="favoritos-item">
+                <div class="product-info">
+                    <p><strong>Producto:</strong> Palazo Beige</p>
+                    <p><strong>Precio:</strong> $45.00</p>
+                </div>
+                <button class="remove-button">Eliminar de Favoritos</button>
+            </div>
+        </div>
+
+        <div class="no-favorites" id="noFavoritesMessage" style="display: none;">
+            <p>No tienes productos en tu lista de favoritos.</p>
+        </div>
+    </div>
             <div class="parallax">
             </div>
         </body>
         <footer>
             <p>&#169; Ejemplo provisional de Copyright</p>
         </footer>
+        <script>
+            // Mostrar mensaje si no hay productos en favoritos
+            let favoritosItems = document.querySelectorAll('.favoritos-item');
+            let noFavoritesMessage = document.getElementById('noFavoritesMessage');
+    
+            if (favoritosItems.length === 0) {
+                noFavoritesMessage.style.display = 'block';
+            }
+        </script>
     </html>
