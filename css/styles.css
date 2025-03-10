@@ -539,3 +539,55 @@ div.scroll {
 .spanF {
   color: black;
 }
+
+.notification {
+  display: none;  /* Oculta por defecto */
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.8); /* Fondo oscuro con algo de transparencia */
+  color: white; /* Asegura que el texto será blanco */
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  text-align: center;
+  font-size: 16px;
+}
+
+.notification button {
+  background-color: #8b5e3c;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.notification button:hover {
+  background-color: #f6cf9f;
+}
+
+button i {
+  margin-right: 8px; /* Espaciado entre el icono y el texto */
+  font-size: 18px; /* Ajustar el tamaño del icono */
+}
+
+/* Estilo para los botones */
+.add-to-favorites, .add-to-cart {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #8b5e3c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-to-favorites:hover, .add-to-cart:hover {
+  background-color: #f6cf9f;
+}

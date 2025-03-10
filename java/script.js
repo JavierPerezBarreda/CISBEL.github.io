@@ -34,3 +34,53 @@ modal.addEventListener("click", (e) => {
     }, 300); // Espera que termine la animación antes de esconder el modal
   }
 });
+
+
+
+// Función para mostrar notificación
+function showNotification(message) {
+  // Obtener el elemento de la notificación
+  var notification = document.getElementById("notification");
+
+  // Cambiar el mensaje
+  notification.textContent = message;
+
+  // Asegurarse de que el texto es blanco
+  notification.style.color = "white";
+
+  // Mostrar la notificación
+  notification.style.display = "block";
+
+  // Ocultar la notificación después de 3 segundos
+  setTimeout(function() {
+      notification.style.display = "none";
+  }, 4000);
+}
+
+// Delegación de eventos para los botones de añadir a favoritos y añadir a la cesta
+document.body.addEventListener("click", function(event) {
+  // Si el clic es en un botón "Añadir a Favoritos"
+  if (event.target && event.target.classList.contains("add-to-favorites")) {
+      showNotification("¡Producto añadido a Favoritos!");
+  }
+  
+  // Si el clic es en un botón "Añadir a la Cesta"
+  if (event.target && event.target.classList.contains("add-to-cart")) {
+      showNotification("¡Producto añadido a la Cesta!");
+  }
+});
+
+// Cambiar el icono de corazón al hacer clic
+document.getElementById('heart1').addEventListener('click', function() {
+  const heartIcon = this;
+  // Cambiar al icono de corazón lleno
+  if (heartIcon.classList.contains('fa-heart')) {
+      heartIcon.classList.remove('fa-heart');
+      heartIcon.classList.add('fa-heart-solid');
+  } else {
+      // Cambiar al icono de corazón vacío
+      heartIcon.classList.remove('fa-heart-solid');
+      heartIcon.classList.add('fa-heart');
+  }
+});
+
