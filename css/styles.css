@@ -471,6 +471,7 @@ div.scroll {
   font-size: 14px; /* Reducir el tamaño de la fuente */
   transition: background-color 0.3s;
   margin-top: 10px;
+  margin-right: 10px;
 }
 
 .add-to-cart:hover {
