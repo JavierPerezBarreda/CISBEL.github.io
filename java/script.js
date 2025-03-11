@@ -85,8 +85,8 @@ document.getElementById('heart1').addEventListener('click', function() {
 });
 
 // Obtener elementos
-const menuToggle = document.getElementById('menu-toggle');
-const indexList = document.getElementById('index-list');
+const menuToggle = document.querySelector('menu-toggle');
+const indexList = document.querySelector('index-list');
 
 // Función para mostrar/ocultar el menú
 menuToggle.addEventListener('click', () => {
