@@ -14,8 +14,78 @@ body {background-color: rgb(246, 207, 159);}
 }
 
 @media (max-width: 768px) {
-  body {
-    font-size: 16px;
+  .navbar {
+    padding: 10px 20px;
+  }
+
+  .index-list {
+    flex-direction: column; /* Cambiar a una columna en lugar de fila */
+    align-items: center;
+    display: none; /* Ocultar el menú por defecto en pantallas móviles */
+    width: 100%;
+    text-align: center;
+  }
+
+  .navbar .menu-toggle {
+    display: block;
+  }
+
+  .navbar .menu-toggle.open div:nth-child(1) {
+    transform: rotate(45deg); /* Girar la primera línea del menú */
+    position: relative;
+  }
+
+  .navbar .menu-toggle.open div:nth-child(2) {
+    opacity: 0; /* Ocultar la segunda línea del menú */
+  }
+
+  .menu-toggle.open div:nth-child(3) {
+    transform: rotate(-45deg);
+    position: relative;
+  }
+
+  .index-list.show {
+    display: flex;
+  }
+
+  /* Ajustes al título para pantallas más pequeñas */
+  #titulo {
+    font-size: 35px; /* Reducir aún más el tamaño */
+  }
+
+  /* Ajustes en las imágenes dentro de la parallax */
+  .parallax {
+    background-attachment: scroll; /* El parallax no se puede usar en dispositivos móviles, por lo que lo cambiamos */
+  }
+
+  /* Ajuste de márgenes en el footer */
+  .footer {
+    padding: 20px 10px;
+  }
+
+  /* Estilos generales para pantallas móviles */
+  .index-list a {
+    font-size: 18px; /* Reducir el tamaño de texto */
+    padding: 10px; /* Añadir algo de padding en cada enlace */
+  }
+
+  .index-list.show {
+    display: block;
+    background-color: #8b5e3c;
+  }
+
+  .footer-content {
+    padding: 10px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  #titulo {
+    font-size: 30px; /* Reducir aún más el tamaño */
+  }
+
+  .index-list {
+    font-size: 12px; /* Reducir aún más el tamaño de los enlaces */
   }
 }
 
@@ -83,7 +153,7 @@ div.scroll {
       transform: scale(1.05); /* Aumentar ligeramente la imagen cuando el cursor pase por encima */
     }
 
-  img {border: 50px}
+  img {border: 50px; max-width: 100%; height: auto;}
 
   .contact_form{	
     width: 460px; 
@@ -215,6 +285,7 @@ div.scroll {
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
     text-align: center;
     z-index: 1000;
+    display: block;
   }
   
   .index-list {
@@ -223,6 +294,7 @@ div.scroll {
     padding: 0;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
   }
   
   .index-list li {

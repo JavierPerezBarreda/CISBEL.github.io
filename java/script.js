@@ -84,3 +84,12 @@ document.getElementById('heart1').addEventListener('click', function() {
   }
 });
 
+// Obtener elementos
+const menuToggle = document.getElementById('menu-toggle');
+const indexList = document.getElementById('index-list');
+
+// Función para mostrar/ocultar el menú
+menuToggle.addEventListener('click', () => {
+  indexList.classList.toggle('show'); // Agregar o quitar la clase 'show'
+  menuToggle.classList.toggle('open'); // Agregar o quitar la clase 'open' para animar el icono
+});
