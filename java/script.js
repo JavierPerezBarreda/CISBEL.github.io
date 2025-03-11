@@ -84,12 +84,20 @@ document.getElementById('heart1').addEventListener('click', function() {
   }
 });
 
-// Obtener elementos
-const menuToggle = document.querySelector('menu-toggle');
-const indexList = document.querySelector('index-list');
+// Obtener los elementos
+const menuToggle = document.querySelector('.menu-toggle'); // Asegúrate de que el selector esté bien escrito ('.menu-toggle')
+const indexList = document.querySelector('.index-list'); // Asegúrate de que el selector esté bien escrito ('.index-list')
+const navbar = document.querySelector('.navbar ul');  // Este es el ul que queremos mostrar/ocultar
 
 // Función para mostrar/ocultar el menú
 menuToggle.addEventListener('click', () => {
-  indexList.classList.toggle('show'); // Agregar o quitar la clase 'show'
+  // Cambiar el display del menú
+  if (navbar.style.display === 'none' || navbar.style.display === '') {
+    navbar.style.display = 'flex'; // Mostrar el menú con display: flex
+  } else {
+    navbar.style.display = 'none'; // Ocultar el menú
+  }
+
+  // Animación para el icono hamburguesa (opcional)
   menuToggle.classList.toggle('open'); // Agregar o quitar la clase 'open' para animar el icono
 });
