@@ -1207,7 +1207,7 @@ button:hover {
   background-color: #556B2F; /* Color verde más oscuro al pasar el ratón */
 }
 
-@media (min-width: 1100px) {
+@media (min-width: 1500px) {
   .eslogan {
     display: none;  }
 }
