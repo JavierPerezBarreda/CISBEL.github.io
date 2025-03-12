@@ -240,6 +240,7 @@ body {background-color: rgb(246, 207, 159);}
   /* Ajustes al título para pantallas más pequeñas */
   #titulo {
     font-size: 25vw;
+    text-align: center;
 }
 
   /* Ajustes en las imágenes dentro de la parallax */
@@ -349,6 +350,7 @@ body {background-color: rgb(246, 207, 159);}
 }*/
 
 .eslogan {
+  display: none;
   font-family: "Dancing Script", cursive; /* Tipografía atractiva */
   font-size: 3rem; /* Tamaño más grande */
   color: #ff6347; /* Un color vibrante (tomato) */
@@ -1133,7 +1135,7 @@ button:hover {
 
 .reparacion-servicio {
   padding: 30px;
-  background-color: #F1E3D3; /* Fondo adaptado al color solicitado */
+  background-color: #ecb67a; /* Fondo adaptado al color solicitado */
   text-align: center;
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
