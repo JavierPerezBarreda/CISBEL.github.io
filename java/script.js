@@ -123,3 +123,24 @@ document.addEventListener('DOMContentLoaded', function () {
     modal.classList.remove("show"); // Remover la clase 'show' para detener la animación
   });
 });
+
+  // Función para cambiar el texto dependiendo del tamaño de la pantalla
+  function cambiarTextoSegunDispositivo() {
+    var anchoPantalla = window.innerWidth;
+
+    // Cambiar el texto de "Quiénes Somos" si el dispositivo es móvil (pantalla pequeña)
+    if (anchoPantalla <= 768) {
+        document.getElementById("textoOriginalSomos").innerHTML = "En Cisbel, ofrecemos moda femenina única y accesible, especializada en vestidos, palazos, accesorios y costura personalizada. Nuestro objetivo es que las mujeres se sientan cómodas, elegantes y seguras con prendas que se ajusten perfectamente a su estilo y necesidades.";
+        document.getElementById("textoOriginalHacer").innerHTML = "En Cisbel, además de ropa de alta calidad, ofrecemos un servicio exclusivo de costura para garantizar que cada prenda se ajuste a tus medidas. Nuestro equipo de costureras trabaja con materiales de primera calidad para crear diseños únicos, asegurando que te sientas cómoda y segura con cada prenda.";
+    } else {
+        // Si no es móvil (pantalla grande), mantener el texto original
+        document.getElementById("textoOriginalSomos").innerHTML = "En Cisbel, somos una tienda de ropa femenina dedicada a ofrecer moda única, moderna y accesible. Nos especializamos en vestidos, palazos y accesorios, así como en un servicio de costura personalizado. Nuestro objetivo es ayudar a las mujeres a sentirse únicas, cómodas y elegantes en cada ocasión. Nos apasiona crear prendas que no solo resalten la belleza exterior, sino también la confianza interna.\nContamos con un equipo de expertos en moda y costura, listos para brindar un servicio personalizado y asegurarnos de que cada prenda encaje perfectamente en ti. Ya sea que busques un vestido de gala o un conjunto más casual, en Cisbel tenemos lo que necesitas para que te sientas especial.";
+        document.getElementById("textoOriginalHacer").innerHTML = "En Cisbel no solo vendemos ropa de alta calidad, sino que también ofrecemos un servicio exclusivo de costura para asegurar que cada prenda se ajuste perfectamente a tus medidas. Ya sea que necesites una modificación, un ajuste a medida o crear una prenda completamente nueva, nuestro equipo de costureras se encargará de cada detalle. \n Trabajamos con materiales de primera calidad y nos aseguramos de que cada diseño sea único. Nuestro objetivo es que te sientas cómoda y segura con cada prenda que compres, porque creemos que la moda no solo debe verse bien, sino también sentirse bien. Visítanos y descubre todo lo que podemos hacer por ti.";
+    }
+}
+
+// Llamar a la función al cargar la página
+window.onload = cambiarTextoSegunDispositivo;
+
+// Opcional: Escuchar cambios en el tamaño de la ventana (redimensionar)
+window.addEventListener('resize', cambiarTextoSegunDispositivo);
