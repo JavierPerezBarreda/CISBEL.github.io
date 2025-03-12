@@ -81,6 +81,7 @@ body {background-color: rgb(246, 207, 159);}
 .contact_form {
   width: 100%;
   padding: 20px;
+  box-sizing: border-box; /* Asegura que el padding no afecte al tamaño total */
 }
 
 .formulario {
@@ -88,7 +89,8 @@ body {background-color: rgb(246, 207, 159);}
   flex-direction: column;
   align-items: center;
   width: 100%;
-}
+  box-sizing: border-box; /* Asegura que el padding no afecte al tamaño total */
+} 
 
 .h1_form, .h3_form {
   text-align: center;
@@ -97,6 +99,7 @@ body {background-color: rgb(246, 207, 159);}
 .formulario p {
   width: 100%;
   margin-bottom: 15px;
+  box-sizing: border-box; /* Asegura que el padding no afecte al tamaño total */
 }
 
 .formulario input,
@@ -107,6 +110,8 @@ body {background-color: rgb(246, 207, 159);}
     margin: 5px 0;
     border: 1px solid #ccc;
     border-radius: 5px;
+    box-sizing: border-box; /* Asegura que el padding no afecte al tamaño total */
+
 }
 
 .formulario button {
@@ -118,6 +123,8 @@ body {background-color: rgb(246, 207, 159);}
   border-radius: 5px;
   cursor: pointer;
   text-align: center;
+  width: 100%; /* Hace que el botón se ajuste al ancho */
+  box-sizing: border-box; /* Asegura que el padding no afecte al tamaño total */
 }
 
 .formulario button:hover {
@@ -340,7 +347,7 @@ body {background-color: rgb(246, 207, 159);}
 
 .eslogan {
   font-family: "Dancing Script", cursive; /* Tipografía atractiva */
-  font-size: 3rem; /* Tamaño más grande */
+  font-size: 1.5rem; /* Tamaño más grande */
   color: #ff6347; /* Un color vibrante (tomato) */
   text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3); /* Sombra suave */
   letter-spacing: 2px; /* Espaciado entre letras */
@@ -348,6 +355,7 @@ body {background-color: rgb(246, 207, 159);}
   font-weight: bold; /* Hace que el texto sea más llamativo */
   animation: fadeIn 2s ease-in-out; /* Animación de aparición */
   transition: transform 0.3s ease; /* Suavizado al pasar el mouse */
+  margin-top: 0;
 }
 
 /* Al pasar el mouse sobre el eslogan, hacemos que se mueva un poco */
@@ -358,8 +366,15 @@ body {background-color: rgb(246, 207, 159);}
 }*/
 
 .esloganT {
-    width: 100%;
-    
+  width: 100%;
+  text-align: center;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.tituloTD, .esloganTD {
+  padding: 10px;
+  vertical-align: top;
 }
 
 .esloganTD {
