@@ -13,9 +13,46 @@ body {background-color: rgb(246, 207, 159);}
   }
 }
 
-@media (min-width: 568px) and (max-width: 1024px) {
+@media screen and (max-width: 600px) {
+  header h1 {
+    font-size: 1.8em;
+  }
+
+  .eslogan {
+    font-size: 1em;
+  }
+
+  /* Cambiar el layout de las secciones a una columna */
+  .section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Ajustar el tamaño de las imágenes */
+  section img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Ajustar los márgenes y el espaciado */
+  .section div {
+    margin: 10px 0;
+  }
+
+  /* Ajustar el tamaño de los textos */
+  .section div p {
+    font-size: 0.9em;
+  }
+}
+
+
+@media (min-width: 601px) and (max-width: 1024px) {
   .navbar {
     padding: 10px 20px;
+  }
+
+  .eslogan {
+    font-size: 1em;
   }
   
   .menu-toggle {
@@ -31,8 +68,10 @@ body {background-color: rgb(246, 207, 159);}
   display: none;
 }
 
-.navbar.show ul {
-  display: block; /* Mostrar el menú cuando se haga clic en el botón hamburguesa */
+/* Cuando la clase 'show' se agrega al menú, se muestra */
+.navbar ul.show {
+  display: flex; /* Mostrar el menú */
+  flex-direction: column; /* Para dispositivos móviles, el menú puede mostrarse como una columna */
 }
 
 .menu-toggle div {
@@ -322,12 +361,22 @@ div.scroll {
   
   #vestidoprod {margin: 3; padding: 55px; text-align: center; border-radius: 15px; font-size: 35px; }
 
-  .vestidos {border-top: solid;}
+  .vestidos {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los productos se distribuyan en filas */
+    justify-content: center;
+    gap: 20px; /* Espacio entre los productos */
+    padding: 20px;
+  }
 
-  .vestidoimg {border-radius: 15px; border-style: solid; border: 50px; cursor: pointer;
-    transition: transform 0.3s ease; /* Transición suave */
-    outline: none;}
-
+  .vestidoimg {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    cursor: pointer;
+    max-height: 300px; /* Limita la altura de las imágenes para que no se estiren demasiado */
+    object-fit: cover; /* Ajusta la imagen para que no se deforme */
+  }
     .vestidoimg:hover {
       transform: scale(1.05); /* Aumentar ligeramente la imagen cuando el cursor pase por encima */
     }
@@ -381,19 +430,19 @@ div.scroll {
   }
   
   
-  button{
-    height: 45px; 
-    padding-left: 5px;
-    padding-right: 5px; 	
-    margin-bottom: 20px; 
-    margin-top: 10px; 	
-    text-transform: uppercase;
-    background-color: #8b5e3c; 
-    border-color: #8b5e3c; 
-    border-style: solid; 
-    border-radius: 10px;	
-    width: 420px;   
+  button {
+    background-color: #ff5b5b;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
     cursor: pointer;
+    font-size: 16px;
+    width: 100%; /* Ocupa el 100% del ancho disponible dentro de su contenedor */
+    max-width: 280px; /* Limita el ancho máximo del botón */
+    margin-top: 10px; /* Espacio entre los botones y la imagen */
+    transition: background-color 0.3s ease;
+    box-sizing: border-box; /* Asegura que el padding no afecte al tamaño total */
   }
   
   
@@ -589,9 +638,22 @@ div.scroll {
 }
 
 .product-info {
-  flex: 1;
-  font-size: 16px;
+  display: flex;
+  flex-direction: column; /* Los botones y el título se apilan verticalmente */
+  justify-content: space-between; /* Distribuye el espacio entre el título y los botones */
+  align-items: center;
+  width: 100%;
+  margin-top: 15px;
 }
+
+.product-info h1 {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 10px; /* Separación entre el título y los botones */
+  text-align: center;
+  line-height: 1.2;
+}
+
 
 .quantity-input {
   width: 50px;
@@ -667,9 +729,25 @@ div.scroll {
   margin-bottom: 15px;
 }
 
-.product-info {
-  flex: 1;
-  font-size: 16px;
+
+.product-container {
+  display: flex;
+  flex-direction: column; /* Los elementos se apilan verticalmente */
+  align-items: center;
+  width: 100%; /* Por defecto, ocupa todo el ancho en pantallas pequeñas */
+  max-width: 300px; /* Limita el tamaño máximo para cada producto */
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  text-align: center; /* Alinea el texto dentro del contenedor */
+  margin-bottom: 20px; /* Espacio inferior para separar los productos */
+}
+
+/* Efecto hover para cada producto */
+.product-container:hover {
+  transform: scale(1.05);
 }
 
 .remove-button {
@@ -844,4 +922,98 @@ button i {
 
 .add-to-favorites:hover, .add-to-cart:hover {
   background-color: #f6cf9f;
+}
+
+@media (max-width: 768px) {
+  .product-info h1 {
+    font-size: 16px; /* Reducir el tamaño del texto en pantallas más pequeñas */
+  }
+
+  .navbar ul.show {
+    display: flex; /* Mostrar el menú */
+    flex-direction: column; /* Para dispositivos móviles, el menú puede mostrarse como una columna */
+  }
+
+  button {
+    font-size: 14px; /* Botones más pequeños en pantallas pequeñas */
+  }
+
+  /* Estilo general */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilo de la galería de imágenes */
+.image-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); /* Grid responsivo para columnas */
+  gap: 20px; /* Espacio entre los productos */
+  padding: 20px;
+  justify-items: center; /* Centra los items dentro de las celdas */
+}
+
+/* Estilo de cada celda de producto */
+td {
+  display: flex;
+  flex-direction: column; /* Asegura que los elementos (imagen y botones) se apilen verticalmente */
+  align-items: center; /* Centra los elementos horizontalmente */
+  justify-content: flex-start; /* Alinea los elementos al inicio */
+  text-align: center;
+  padding: 10px;
+}
+
+/* Estilo para las imágenes */
+.vestidoimg {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  cursor: pointer;
+  max-height: 300px; /* Limita la altura de las imágenes para que no se estiren demasiado */
+  object-fit: cover; /* Ajusta la imagen para que no se deforme */
+}
+
+.vestidoimg:hover {
+  transform: scale(1.05);
+}
+
+.product-info {
+  display: flex;
+  flex-direction: column; /* Los botones y el título se apilan verticalmente */
+  justify-content: space-between; /* Distribuye el espacio entre el título y los botones */
+  align-items: center;
+  width: 100%;
+  margin-top: 15px;
+}
+
+/* Títulos de los productos */
+.product-info h1 {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 10px; /* Separación entre el título y los botones */
+  text-align: center;
+  line-height: 1.2;
+}
+
+
+/* Estilo para los botones */
+button {
+  background-color: #ff5b5b;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 100%; /* Ocupa el 100% del ancho disponible dentro de su contenedor */
+  max-width: 280px; /* Limita el ancho máximo del botón */
+  margin-top: 10px; /* Espacio entre los botones y la imagen */
+  transition: background-color 0.3s ease;
+  box-sizing: border-box; /* Asegura que el padding no afecte al tamaño total */
+}
+button:hover {
+  background-color: #e04d4d;
+}
 }
