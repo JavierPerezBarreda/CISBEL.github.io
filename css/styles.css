@@ -89,6 +89,7 @@ body {background-color: rgb(246, 207, 159);}
 .contact_form {
   width: 20%;
   padding: 20px;
+  text-align: center;
   box-sizing: border-box; /* Asegura que el padding no afecte al tamaño total */
 }
 
