@@ -79,7 +79,7 @@ body {background-color: rgb(246, 207, 159);}
 }
 
 .contact_form {
-  width: 100%;
+  width: 20%;
   padding: 20px;
   box-sizing: border-box; /* Asegura que el padding no afecte al tamaño total */
 }
@@ -102,9 +102,10 @@ body {background-color: rgb(246, 207, 159);}
   box-sizing: border-box; /* Asegura que el padding no afecte al tamaño total */
 }
 
+
 .formulario input,
 .formulario textarea {
-    width: 100%;
+    width: 55%;
     padding: 10px;
     font-size: 1em;
     margin: 5px 0;
@@ -486,7 +487,7 @@ div.scroll {
   img {border: 50px; max-width: 100%; height: auto;}
 
   .contact_form{	
-    width: 460px; 
+    width: 360px; 
     height: auto;
     margin: 80px auto;
     border-radius: 10px;  
@@ -509,11 +510,17 @@ div.scroll {
     padding-left: 10px;
     margin-bottom: 20px; 
   }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"] {
+    width: 220px
+  }
   
   
   textarea{
     background-color: #fbfbfb; 
-    width: 405px; 
+    width: 305px; 
     height: 150px; 
     border-radius: 5px;  
     border-style: solid; 
