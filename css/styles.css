@@ -1143,7 +1143,7 @@ button:hover {
 
 .reparacion-servicio h2 {
   font-size: 2.5em;
-  color: #6B8E23; /* Color verde oliva para los títulos */
+  color: #ff6347; /* Color verde oliva para los títulos */
   margin-bottom: 15px;
 }
 
@@ -1202,7 +1202,7 @@ button:hover {
   padding: 12px 20px;
   font-size: 1.2em;
   border: none;
-  background-color: #6B8E23; /* Verde oliva para los botones */
+  background-color: #8b5e3c;
   color: white;
   border-radius: 5px;
   cursor: pointer;
