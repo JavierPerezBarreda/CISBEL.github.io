@@ -61,6 +61,7 @@ body {background-color: rgb(246, 207, 159);}
     font-size: 1.5em; /* Tamaño adecuado para el eslogan */
     margin-top: 0; /* Elimina cualquier margen superior que pueda generar separación */
     line-height: 1.3; /* Mejor para mantener una distancia entre las líneas */
+    display: flex;
 }
   .tituloTD {
    width: 10px;
