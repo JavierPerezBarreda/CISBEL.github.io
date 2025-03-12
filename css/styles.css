@@ -144,7 +144,8 @@ body {background-color: rgb(246, 207, 159);}
 
   /* Ajustes al título para pantallas más pequeñas */
   #titulo {
-    font-size: 35px;
+    font-size: 15px;
+    text-align: left;
   }
 
   /* Ajustes en las imágenes dentro de la parallax */
