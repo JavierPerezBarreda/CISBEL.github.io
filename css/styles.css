@@ -226,7 +226,7 @@ body {background-color: rgb(246, 207, 159);}
   }
 
   .menu-toggle.open div:nth-child(1) {
-    transform: rotate(-45deg);
+    transform: rotate(45deg);
     position: relative;
     top: 8px;
 }
@@ -1268,4 +1268,8 @@ button:hover {
   font-size: 16px;
   color: #555;
   line-height: 1.6;
+}
+
+.index-mar {
+  margin-bottom: 3px;
 }
