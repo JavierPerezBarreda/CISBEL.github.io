@@ -52,26 +52,98 @@ body {background-color: rgb(246, 207, 159);}
 }
 
 
-@media (min-width: 1px) and (max-width: 3124px) {
+@media (min-width: 1px) and (max-width: 768px) {
   .navbar {
     padding: 10px 20px;
   }
 
   .eslogan {
-    font-size: 1em;
-    text-align: left;
-  }
-
+    font-size: 1.5em; /* Tamaño adecuado para el eslogan */
+    margin-top: 0; /* Elimina cualquier margen superior que pueda generar separación */
+    line-height: 1.3; /* Mejor para mantener una distancia entre las líneas */
+}
   .tituloTD {
-    text-align: center; /* Centra horizontalmente el contenido de la celda */
-    font-size: 1em;
+   width: 10px;
+   height: 5px;
   }
 
-  .esloganTD {
-  position: relative;
-  left: -65px;
-  }
-  
+  .esloganT {
+    width: 100%;
+    display: block;
+}
+.tituloTD, .esloganTD {
+  display: block; /* Hace que las celdas se alineen verticalmente */
+  text-align: center; /* Centra el contenido */
+  padding: 0;
+  width: 100%;
+}
+
+.contact_form {
+  width: 100%;
+  padding: 20px;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.h1_form, .h3_form {
+  text-align: center;
+}
+
+.formulario p {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.formulario input,
+.formulario textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.formulario button {
+  padding: 10px 20px;
+  font-size: 1.2em;
+  background-color: #8b5e3c;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.formulario button:hover {
+  background-color: #704c29;
+}
+
+/* Estilos del pie de página */
+.footer {
+  padding: 10px;
+  text-align: center;
+}
+
+.footer-info {
+  margin-bottom: 10px;
+}
+
+.social-links {
+  margin-top: 10px;
+}
+
+.social-icon {
+  margin: 0 10px;
+  color: #333;
+  text-decoration: none;
+}
+
   .menu-toggle {
     display: flex; /* Mostrar las barras en pantallas pequeñas */
     flex-direction: column;
@@ -159,9 +231,8 @@ body {background-color: rgb(246, 207, 159);}
 
   /* Ajustes al título para pantallas más pequeñas */
   #titulo {
-    font-size: 4vw;  /* Utilizamos vw para ajustar el tamaño con el ancho de la ventana */
-    text-align: left;
-  }
+    font-size: 2.5em; /* Ajusta el tamaño del título en pantallas pequeñas */
+}
 
   /* Ajustes en las imágenes dentro de la parallax */
   .parallax {
