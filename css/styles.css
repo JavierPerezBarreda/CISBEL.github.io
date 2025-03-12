@@ -1130,3 +1130,83 @@ button:hover {
   background-color: #e04d4d;
 }
 }
+
+.reparacion-servicio {
+  padding: 30px;
+  background-color: #F1E3D3; /* Fondo adaptado al color solicitado */
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.reparacion-servicio h2 {
+  font-size: 2.5em;
+  color: #6B8E23; /* Color verde oliva para los títulos */
+  margin-bottom: 15px;
+}
+
+.reparacion-servicio p {
+  font-size: 1.2em;
+  line-height: 1.5;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.reparacion-servicio ul {
+  list-style-type: none;
+  padding: 0;
+  font-size: 1.1em;
+  color: #555;
+}
+
+.reparacion-servicio ul li {
+  margin-bottom: 10px;
+}
+
+.imagen-servicio {
+  margin: 20px 0;
+}
+
+.servicio-img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos del formulario */
+.formulario-reparacion {
+  background-color: #F1E3D3; /* Fondo de formulario adaptado */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  margin-top: 30px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.formulario-reparacion input,
+.formulario-reparacion textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.formulario-reparacion button {
+  padding: 12px 20px;
+  font-size: 1.2em;
+  border: none;
+  background-color: #6B8E23; /* Verde oliva para los botones */
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.formulario-reparacion button:hover {
+  background-color: #556B2F; /* Color verde más oscuro al pasar el ratón */
+}
