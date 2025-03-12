@@ -22,6 +22,11 @@ body {background-color: rgb(246, 207, 159);}
     font-size: 1em;
   }
 
+  .tituloTD {
+    text-align: center; /* Centra horizontalmente el contenido de la celda */
+    font-size: 1em;
+  }
+
   /* Cambiar el layout de las secciones a una columna */
   .section {
     flex-direction: column;
