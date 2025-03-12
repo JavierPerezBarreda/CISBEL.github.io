@@ -202,7 +202,7 @@ body {background-color: rgb(246, 207, 159);}
 
 @media (max-width: 480px) {
   #titulo {
-    font-size: 30px; /* Reducir aún más el tamaño */
+    font-size: 15px; /* Reducir aún más el tamaño */
   }
 
   .index-list {
