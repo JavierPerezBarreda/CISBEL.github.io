@@ -149,7 +149,8 @@ body {background-color: rgb(246, 207, 159);}
 
   /* Ajustes al título para pantallas más pequeñas */
   #titulo {
-    font-size: 1em;
+    font-size: 4vw;  /* Utilizamos vw para ajustar el tamaño con el ancho de la ventana */
+    text-align: left;
   }
 
   /* Ajustes en las imágenes dentro de la parallax */
