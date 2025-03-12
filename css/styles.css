@@ -20,6 +20,7 @@ body {background-color: rgb(246, 207, 159);}
 
   .eslogan {
     font-size: 1em;
+    text-align: left;
   }
 
   .tituloTD {
@@ -58,6 +59,17 @@ body {background-color: rgb(246, 207, 159);}
 
   .eslogan {
     font-size: 1em;
+    text-align: left;
+  }
+
+  .tituloTD {
+    text-align: center; /* Centra horizontalmente el contenido de la celda */
+    font-size: 1em;
+  }
+
+  .esloganTD {
+  position: relative;
+  left: -65px;
   }
   
   .menu-toggle {
@@ -115,8 +127,6 @@ body {background-color: rgb(246, 207, 159);}
     font-size: 18px;
   }
 
- 
-  
 .navbar li {
   display: block;
   width: 100%;
