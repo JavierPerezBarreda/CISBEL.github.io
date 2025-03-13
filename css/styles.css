@@ -69,7 +69,7 @@ body {background-color: rgb(246, 207, 159);}
     animation: fadeIn 2s ease-in-out; /* Animación de aparición */
     transition: transform 0.3s ease; /* Suavizado al pasar el mouse */
     margin-top: 0;
-    padding-left: 50px;
+    padding-left: 49px;
   }
   .tituloTD {
    width: 10px;
