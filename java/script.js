@@ -75,13 +75,13 @@ document.body.addEventListener("click", function(event) {
 document.getElementById('heart1').addEventListener('click', function() {
   const heartIcon = this;
   // Cambiar al icono de corazón lleno
-  if (heartIcon.classList.contains('fa-heart')) {
-      heartIcon.classList.remove('fa-heart');
-      heartIcon.classList.add('fa-heart-solid');
+  if (heartIcon.classList.contains('fa-regular fa-heart')) {
+      heartIcon.classList.remove('fa-regular fa-heart');
+      heartIcon.classList.add('fa-solid fa-heart');
   } else {
       // Cambiar al icono de corazón vacío
-      heartIcon.classList.remove('fa-heart-solid');
-      heartIcon.classList.add('fa-heart');
+      heartIcon.classList.remove('fa-regular fa-heart');
+      heartIcon.classList.add('fa-solid fa-heart');
   }
 });
 });
