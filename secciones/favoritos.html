@@ -9,11 +9,11 @@
         </head>
         <body>
             <!--imagen del fondo--> 
-            <img src="./img/corrección de pagina .jpg" alt="portada" style="position: fixed; top: 20px; left:0; width:100%; height:100%; object-fit: cover; z-index: -1; opacity: 0.4;"><!--Dejar la imagen de fondo??-->
-            <h1 id="titulo">CISBEL</h1>
+            <img src="../img/corrección de pagina .jpg" alt="portada" style="position: fixed; top: 20px; left:0; width:100%; height:100%; object-fit: cover; z-index: -1; opacity: 0.4;"><!--Dejar la imagen de fondo??-->
             
             <!--Menú de navegación-->
             <nav class="navbar">
+            <h1 id="titulo">CISBEL</h1>
                 <div id="menu-toggle" class="menu-toggle">
                     <div class="index-mar"></div>
                     <div class="index-mar"></div>
@@ -21,15 +21,15 @@
                 </div>
                 <ul class="index-list">
                     <li><a href="./index.html"><i class="fas fa-home"></i></a></li>
-                    <li><a href="./secciones/vestidos.html"><img src="./img/iconos/buscador.png" width="55px" height="75px">Vestidos</a></li>
-                    <li><a href="./secciones/palazos.html"><img src="./img/iconos/buscador.png" width="50px" height="75px">Palazos</a></li>
-                    <li><a href="./secciones/accesorios.html"><i class="fa-solid fa-gem"></i>Accesorios</a></li>
+                    <li><a href="./secciones/vestidos.html"><img src="../img/iconos/vestidos.png" width="55px"></a></li>
+                    <li><a href="./secciones/palazos.html"><img src="../img/iconos/palazos.png" width="40px"></a></li>
+                    <li><a href="./secciones/accesorios.html"><img src="../img/iconos/accesorios.png" width="60px"></a></li>
                     <li><a href="./secciones/costura.html"><i class="fa-solid fa-scissors"></i></a></li>
-                    <li><a href="./secciones/contacto.html"><img src="./img/iconos/contacto.png" width="45px" height="75px"></a></li>
-                    <li><a href="./secciones/favoritos.html"><i class="fas fa-heart" id="heart1"></i></a></li>
-                    <li><a href="./secciones/cesta.html"><i class="fas fa-shopping-cart"></i></a></li>
-                    <li><i>As Unique as You Are</i></li>
+                    <li><a href="./secciones/contacto.html"><img src="../img/iconos/contacto.png" width="45px"></a></li>
+                    <li><a href="./secciones/favoritos.html"><img src="../img/iconos/favoritos.png" width="50px"></a></li>
+                    <li><a href="./secciones/cesta.html"><img src="../img/iconos/cesta.png" width="50px"></a></li>
                 </ul>
+                <div class="eslogan">As Unique as You Are</div>
             </nav>
 
     
@@ -80,9 +80,14 @@
                     </p>
                 </div>
                 <div class="social-links">
-                    <a href="https://www.instagram.com" target="_blank" class="social-icon"><img src="./img/iconos/logo_instagram.png"></a>
-                    <a href="https://www.tiktok.com/es/" target="_blank" class="social-icon"><img src="./img/iconos/logo_tiktok.png"></a>
+                    <a href="https://www.instagram.com" target="_blank" class="social-icon"><img src="../img/iconos/logo_instagram.png"></a>
+                    <a href="https://www.tiktok.com/es/" target="_blank" class="social-icon"><img src="../img/iconos/logo_tiktok.png"></a>
                 </div>
+                <div>
+                    <span class="legal-text">POLITICA DE PRIVACIDAD  |  </span><span class="legal-text">AVISO LEGAL  |  </span><span class="legal-text">CONDICIONES DE VENTA</span>
+                </div>
+            </div>
+        </footer>
         <script>
             // Mostrar mensaje si no hay productos en favoritos
             let favoritosItems = document.querySelectorAll('.favoritos-item');
