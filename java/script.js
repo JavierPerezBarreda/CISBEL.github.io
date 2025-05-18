@@ -144,3 +144,81 @@ window.onload = cambiarTextoSegunDispositivo;
 
 // Opcional: Escuchar cambios en el tamaño de la ventana (redimensionar)
 window.addEventListener('resize', cambiarTextoSegunDispositivo);
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  const popup = document.getElementById("popup");
+  const mensaje = document.getElementById("mensaje");
+  const checkboxCookies = document.getElementById("cookies");
+  const correoInput = document.getElementById("correo");
+
+  if (!localStorage.getItem("popupMostrado")) {
+    setTimeout(() => {
+      popup.style.display = "flex";
+      localStorage.setItem("popupMostrado", "true");
+    }, 3000);
+  }
+
+  window.cerrarPopup = function () {
+    popup.style.display = "none";
+  };
+
+  window.aceptar = function () {
+    const correo = correoInput.value.trim();
+    const cookiesAceptadas = checkboxCookies.checked;
+
+    if (!correo) {
+      mensaje.textContent = "El campo de correo es obligatorio.";
+      mensaje.className = "error";
+      return;
+    }
+
+    if (!cookiesAceptadas) {
+      mensaje.textContent = "Debes aceptar las cookies para continuar.";
+      mensaje.className = "error";
+      return;
+    }
+
+    mensaje.textContent = "Has conseguido un 25% de descuento en tu primera compra.";
+    mensaje.className = "ok";
+
+    setTimeout(() => {
+      cerrarPopup();
+    }, 3000);
+  };
+});
+
+  //carrusel de imágnes
+  const imagenes = [
+    "./img/vestidos/blanco y negro.jpg",
+    "./img/palazos/palazo beige botones.jpg",
+    "./img/accesorios/pendientes largos.jpg",
+    "./img/festivaOutfit.jpg",
+    "./img/blog/blog1.jpg"
+  ]
+  let indiceCentral = 0;
+
+  function obtenerIndiceCircular(i){
+    return(i + imagenes.length) % imagenes.length;
+  }
+
+  function renderCarrusel(){
+    const carrusel = document.getElementById("carrusel");
+    carrusel.innerHTML = "";
+
+    for(let offset = -2; offset <= 2; offset++){
+      const indice = obtenerIndiceCircular(indiceCentral + offset);
+      const img = document.createElement("img");
+      img.src = imagenes[indice];
+      img.classList.add("carrusel-image");
+      if(offset === 0){
+        img.classList.add("center");
+      }
+      img.addEventListener("click", () => {
+        indiceCentral = indice;
+        renderCarrusel();
+      });
+      carrusel.appendChild(img);
+    }
+  }
+  document.addEventListener("DOMContentLoaded", renderCarrusel);

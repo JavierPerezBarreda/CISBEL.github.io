@@ -1,4 +1,4 @@
-<DOCTYPE html>
+<!DOCTYPE html>
 <html>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,6 +13,25 @@
         <img src="./img/corrección de pagina .jpg" alt="portada" style="position: fixed; top: 20px; left:0; width:100%; height:100%; object-fit: cover; z-index: -1; opacity: 0.4;"><!--Dejar la imagen de fondo??-->
         
         <!--prompt para registrarse cuándo se abrá la página-->
+        <div id="popup">
+            <div class="popup-content">
+                <h2>Consigue un 25% de descuento</h2>
+                <p>Registrate y consigue un 25% de descuento en tu primera compra</p>
+                <form id="popup-form">
+                    <input type="email" id="correo" placeholder="Introduce tu email:" required>
+                    <input type="text" placeholder="Introduce una contraseña: " required>
+                </form>
+                <label>
+                    <input type="checkbox" id="cookies">Acepto el uso de cookies
+                </label>
+                <p id="mensaje" style="min-height: 1.5rem;"></p>
+                <div>
+                    <button onclick="aceptar()">Registrarse</button>
+                    <button onclick="cerrarPopup()">Cerrar</button>
+                </div>
+            </div>
+        </div>
+
 
         <!--Menú de navegación-->
         <nav class="navbar">
@@ -34,40 +53,52 @@
             </ul>
             <div class="eslogan">As Unique as You Are</div>
         </nav>
+
+        <div class="carrusel-container" id="carrusel">
+            <img src="./img/vestidos/blanco y negro.jpg" alt="imagen1" class="carrusel-image">
+            <img src="./img/palazos/palazo beige botones.jpg" alt="imagen2" class="carrusel-image">
+            <img src="./img/accesorios/pendientes largos.jpg" alt="imagen3" class="carrusel-image">
+            <img src="./img/festivaOutfit.jpg" alt="imagen4" class="carrusel-imagen">
+            <img src="./img/blog/blog1.jpg" alt="imagen5" class="carrusel-image">
+        </div>
+
+        <section class="cisbel-community">
+            <h2><a href=""></a>CISBEL COMMUNITY</h2>
+            <p>¡Inspirate y comparte tus looks utilizando el hastag #cisbelcommunity y mencionando @cisbel!</p>
+        </section>
         
         <div class="image-text-section">
             <div class="image-row">
                 <div class="photo large-photo">
-                  <a href="./secciones/palazos.html"><img src="./img/palazos/palazo bolsillos y elastico.jpg" alt="Foto 1"></a>
+                  <img src="./img/quienesSomos/quienesSomos1.jpg" alt="Foto 1">
                 </div>
                 <div class="photo large-photo">
-                  <a href="./secciones/vestidos.html"><img src="./img/vestidos/cuello alto.jpg" alt="Foto 2"></a>
+                  <img src="./img/quienesSomos/quienesSomos2.jpg" alt="Foto 2">
                 </div>
                 <div class="photo large-photo">
-                    <a href="./secciones/costura.html"><img src="./img/inicio/costura1.jpg" alt="Foto 4"></a>
+                    <img src="./img/quienesSomos/quienesSomos3.jpg" alt="Foto 3">
                 </div>
             </div>
-
             <section class="about-us">
                 <h2>¿Quiénes Somos?</h2>
-                <p id="textoOriginalSomos">En Cisbel, somos una tienda de ropa femenina dedicada a ofrecer moda única, moderna y accesible. Nos especializamos en vestidos, palazos y accesorios, así como en un servicio de costura personalizado. Nuestro objetivo es ayudar a las mujeres a sentirse únicas, cómodas y elegantes en cada ocasión. Nos apasiona crear prendas que no solo resalten la belleza exterior, sino también la confianza interna.
-                Contamos con un equipo de expertos en moda y costura, listos para brindar un servicio personalizado y asegurarnos de que cada prenda encaje perfectamente en ti. Ya sea que busques un vestido de gala o un conjunto más casual, en Cisbel tenemos lo que necesitas para que te sientas especial.</p>
+                <p id="textoOriginalSomos">CISBEL es una marca de ropa femenina que combina comodidad, estilo y elegancia en cada prenda, esta creada para la mujer moderna y autentica, la colección esta diseñada para acompañar en su día a día, desde las ocasiones mas casuales hasta los momentos especiales. 
+                    Nos inspiramos en la mujer contemporánea, que busca equilibrio entre la moda y la funcionalidad, sin perder de vista su autenticidad. Cada prenda esta diseñada para ofrecer prendas de alta calidad.
+                </p>
             </section>
         </div>
 
         <div class="image-text-section">
             <div class="image-row">
                 <div class="photo large-photo">
-                  <a href="./secciones/palazos.html"><img src="./img/palazos/palazo beige con negro.jpg" alt="Foto 3"></a>
+                    <img src="./img/quienesSomos/quienesSomos4.jpg" alt="Foto 4">
                 </div>
                 <div class="photo large-photo">
-                    <a href="./secciones/accesorios.html"><img src="./img/accesorios/corazon.jpg" alt="Foto 4"></a>
+                    <img src="./img/inicio/costura3.jpg" alt="Foto 5">
                 </div>
                 <div class="photo large-photo">
-                    <a href="./secciones/vestidos.html"><img src="./img/vestidos/vestido hombro descubierto.jpg" alt="Foto 4"></a>
+                    <img src="./img/quienesSomos/quienesSomos5.jpg" alt="Foto 6">
                 </div>
             </div>
-
             <section class="what-we-do">
                 <h2>¿Qué Hacemos?</h2>
                 <p id="textoOriginalHacer">En Cisbel no solo vendemos ropa de alta calidad, sino que también ofrecemos un servicio exclusivo de costura para asegurar que cada prenda se ajuste perfectamente a tus medidas. Ya sea que necesites una modificación, un ajuste a medida o crear una prenda completamente nueva, nuestro equipo de costureras se encargará de cada detalle.
@@ -137,7 +168,7 @@
                 <a href="https://www.tiktok.com/es/" target="_blank" class="social-icon"><img src="./img/iconos/logo_tiktok.png"></a>
             </div>
             <div>
-                <span class="legal-text">POLITICA DE PRIVACIDAD  |  </span><span class="legal-text">AVISO LEGAL  |  </span><span class="legal-text">CONDICIONES DE VENTA</span>
+                <span class="legal-text"><a href="./secciones/privacidad.html">POLITICA DE PRIVACIDAD</a>  |  </span><span class="legal-text"><a href="./secciones/cookies.html">COOKIES</a>  |  </span><span class="legal-text"><a href="./secciones/condicionesCompra.html">CONDICIONES DE COMPRA</a></span>
             </div>
         </div>
     </footer>
