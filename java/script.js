@@ -190,12 +190,31 @@ document.addEventListener("DOMContentLoaded", function () {
 
   //carrusel de imágnes
   const imagenes = [
-    "./img/vestidos/blanco y negro.jpg",
-    "./img/palazos/palazo beige botones.jpg",
-    "./img/accesorios/pendientes largos.jpg",
-    "./img/festivaOutfit.jpg",
-    "./img/blog/blog1.jpg"
+    "./img/blog/blog1.jpg",
+    "./img/blog/blog2.jpg",
+    "./img/blog/blog3.jpg",
+    "./img/blog/blog4.jpg",
+    "./img/blog/blog5.jpg",
+    "./img/blog/blog6.jpg",
+    "./img/blog/blog7.jpg",
+    "./img/blog/blog8.jpg",
+    "./img/blog/blog9.jpg",
+    "./img/blog/blog10.jpg"
   ]
+
+  const textoCarrusel = [
+    "pillada con mi mejor outfit #cisbel",
+    "#cisbel acompañandome en mis días de sol",
+    "algo casual con #cisbel",
+    "yo utilizo #cisbel para todo momento",
+    "siempre elegante y a la moda con #cisbel",
+    "yo siempre utilizo #cisbel",
+    "casual y formal a la vez con #cisbel",
+    "en alta mar con #cisbel",
+    "que mejor experiencia y vestida de #cisbel",
+    "al mar con #cisbel"
+  ]
+
   let indiceCentral = 0;
 
   function obtenerIndiceCircular(i){
@@ -204,6 +223,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   function renderCarrusel(){
     const carrusel = document.getElementById("carrusel");
+    const texto = document.getElementById("carrusel-texto");
     carrusel.innerHTML = "";
 
     for(let offset = -2; offset <= 2; offset++){
@@ -213,6 +233,7 @@ document.addEventListener("DOMContentLoaded", function () {
       img.classList.add("carrusel-image");
       if(offset === 0){
         img.classList.add("center");
+        texto.textContent = textoCarrusel[indice];
       }
       img.addEventListener("click", () => {
         indiceCentral = indice;

@@ -59,53 +59,67 @@ body {
 #mensaje.error { color: red; }
 
 /*Carrusel de imágenes*/
-.carrusel-container{
-  margin: 20px auto;
-  border-radius: 20px;
-  padding: 50px 0px;
-  width: 97vw;
-  height: auto;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  gap: 20px;
-  overflow: hidden;
-  background-color: rgba(251, 230, 211, 0.8);
-  box-shadow: 0 8px 20px rgbs(0, 0, 0, 0.1);
-}
+  .carrusel{
+    background-color: rgba(251, 230, 211, 0.8);
+    box-shadow: 0 8px 20px rgbs(0, 0, 0, 0.1);
+    border-radius: 20px;
+    width: auto;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px; 
+    margin-right: 20px;
+  }
 
-.carrusel-image{
-  width: 300px;
-  height: 180px;
-  object-fit: cover;
-  opacity: 0.6;
-  transition: all 0.4 ease;
-  cursor: pointer;
-  border: none;
-  border-radius: 10px;
-  filter: brightness(0.9);
-  object-fit: cover;
-  object-position: center;
-}
+  .carrusel-container{
+    margin: 20px auto;
+    border-radius: 20px;
+    padding: 50px 0px;
+    width: 97vw;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 20px;
+    overflow: hidden;
+  }
 
-.carrusel-image:hover{
-  opacity: 0.8;
-  filter: brightness(1);
-}
+  .carrusel-image{
+    width: 300px;
+    height: 180px;
+    object-fit: cover;
+    opacity: 0.6;
+    transition: all 0.4 ease;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    filter: brightness(0.9);
+    object-fit: cover;
+    object-position: center;
+  }
 
-.carrusel-image.center{
-  width: 500px;
-  height: 300px;
-  opacity: 1;
-  filter: brightness(1.1);
-  border: none;
-}
+  .carrusel-image:hover{
+    opacity: 0.8;
+    filter: brightness(1);
+  }
+
+  .carrusel-image.center{
+    width: 500px;
+    height: 300px;
+    opacity: 1;
+    filter: brightness(1.1);
+    border: none;
+  }
+  .carrusel-text{
+    text-align: center;
+    font-size: 18px;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #333;
+  }
 
   /*fichas de articulos*/
-  #ficha-vest1{
-    background-color: white;
-    width: 80%;
-  }
+  
 
   .product-info button{
     background-color: #8b5e3c;
@@ -1469,6 +1483,7 @@ button:hover {
 /*Sección Cisbel community*/
 .cisbel-community{
   background-color: #f4f4f4; 
+  border-radius: 15px;
   text-align: center; 
   padding: 20px;
   margin-left: 20px; 
