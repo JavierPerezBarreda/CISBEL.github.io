@@ -101,6 +101,34 @@ body {
   border: none;
 }
 
+  /*fichas de articulos*/
+  #ficha-vest1{
+    background-color: white;
+    width: 80%;
+  }
+
+  .product-info button{
+    background-color: #8b5e3c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+
+  .product-info img{
+    border-radius: 8px;
+  }
+
+  .product-politics{
+
+  }
+  .politics{
+    border: 1px solid black;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
 
 /* Animación para el modal */
 @keyframes fadeIn {

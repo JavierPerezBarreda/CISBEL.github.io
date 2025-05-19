@@ -145,7 +145,7 @@ window.onload = cambiarTextoSegunDispositivo;
 // Opcional: Escuchar cambios en el tamaño de la ventana (redimensionar)
 window.addEventListener('resize', cambiarTextoSegunDispositivo);
 
-
+//popup de descuento al registrarse
 document.addEventListener("DOMContentLoaded", function () {
   const popup = document.getElementById("popup");
   const mensaje = document.getElementById("mensaje");
