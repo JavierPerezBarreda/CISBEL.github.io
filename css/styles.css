@@ -158,6 +158,29 @@ body {
     
   }
 
+  .privacy-policy table{
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: #fff7f0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  .privacy-policy th,
+.privacy-policy td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #f6cf9f;
+}
+
+.privacy-policy th {
+  background-color: #f6cf9f;
+  color: #5c3c1c;
+  font-weight: bold;
+}
+
 /* Animación para el modal */
 @keyframes fadeIn {
   from {
