@@ -459,6 +459,15 @@ body {
   width: 100%; /* Botones ocupan todo el ancho disponible */
 }
 
+  /*tabla cookies*/
+  .privacy-policy table,.privacy-policy thead,
+  .privacy-policy tbody,
+  .privacy-policy th,
+  .privacy-policy td,
+  .privacy-policy tr{
+    display: block;
+    width: 100%;    
+  }
 }
 
 @media (max-width: 480px) {
