@@ -122,12 +122,40 @@ body {
     border-radius: 8px;
   }
 
-  .product-politics{
-
-  }
   .politics{
     border: 1px solid black;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  /*politicas de privacidad*/
+  .privacy-policy{
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    line-height: 1.6;
+  }
+
+  .privacy-policy h1{
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .privacy-policy h2{
+    font-size: 1.5rem;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+  }
+
+  .privacy-policy p{
+    text-align: justify;
+    
   }
 
 /* Animación para el modal */
@@ -177,6 +205,8 @@ body {
 @media (min-width: 1px) and (max-width: 768px) {
   .navbar {
     padding: 10px 20px;
+    flex-direction: column;
+    align-items: center;
   }
   .tituloTD {
    width: 10px;
@@ -451,7 +481,7 @@ body {
 }
 
 #titulo {
-  font-size: 2.5rem; 
+  font-size: 3rem; 
   font-family: "Playfair Display", serif;
   text-align: center;
   animation: fadeIn 2s ease-in-out; /* Animación de aparición */
@@ -705,26 +735,31 @@ div.scroll {
   }
 
   .navbar {
-    top: 0;
     width: 100%;
-    height: auto;
     background: #87644b; /* Color marrón similar a la estética general */
-    padding: 15px 0;
+    padding: 15px 30px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
     text-align: center;
     z-index: 1000;
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
     position: relative;
     align-items: center;
   }
+
+  .navbar-left, .navbar-right{
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+  }
   
   .index-list {
+    flex: 2;
     list-style: none;
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     flex-wrap: wrap;
   }
   
@@ -1401,10 +1436,9 @@ button:hover {
 
 /*Sección Cisbel community*/
 .cisbel-community{
-  margin-top: 20px; 
   background-color: #f4f4f4; 
-  padding: 20px; 
   text-align: center; 
+  padding: 20px;
   margin-left: 20px; 
   margin-right: 20px;
 }
