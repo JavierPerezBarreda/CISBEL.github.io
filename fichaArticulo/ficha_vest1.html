@@ -8,39 +8,48 @@
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     </head>
     <body>
-    <fieldset id="ficha-vest1" class="ficha">
-        <form id="ficha-container" class="ficha-container">
-            <img src="../img/vestidos/vestido1.jpg" height="400" width="350">
-            <div class="product-info">
-                <h1>Mimi</h1>
-                <p>Vestido largo beige. Elegante y femenino, con escote cruzado tipo camisa y espalda descubierta. Su falda de corte amplio aporta movimientos y estilo. Ideal para eventos, cenas o una ocasión especial.</p>
-                <p style="font-size: 18px;">27.99€</p>
-                <select name="talla" id="talla">
-                    <option value="0">Introduce tu talla</option>
-                    <option value="XS">XS</option>
-                    <option value="S">S</option>
-                    <option value="M">M</option>
-                    <option value="L">L</option>
-                    <option value="XL">XL</option>
-                </select>
-                <button class="add-to-favorites"><i class="fas fa-heart"><a>Añadir a Favoritos</a></i></button>
-                <button class="add-to-cart"><i class="fas fa-shopping-cart"></i>Añadir a la Cesta</button>
-            </div>
-            <div class="product-politics">
-                <div class="politics">
-                    <img src="../img/iconos/icono_camion.png">
-                    <p>Envios a toda Europa</p>
+        <fieldset id="ficha-vest1" class="ficha">
+            <form id="ficha-container" class="ficha-container">
+                <img src="../img/vestidos/vestido1.jpg" height="400" width="350">
+                <div class="product-info">
+                    <h1>Mimi</h1>
+                    <p>Vestido largo beige. Elegante y femenino, con escote cruzado tipo camisa y espalda descubierta. Su falda de corte amplio aporta movimientos y estilo. Ideal para eventos, cenas o una ocasión especial.</p>
+                    <p style="font-size: 18px;">27.99€</p>
+                    <select name="talla" id="talla">
+                        <option value="0">Introduce tu talla</option>
+                        <option value="XS">XS</option>
+                        <option value="S">S</option>
+                        <option value="M">M</option>
+                        <option value="L">L</option>
+                        <option value="XL">XL</option>
+                    </select>
+                    <button class="add-to-favorites"><i class="fas fa-heart"><a>Añadir a Favoritos</a></i></button>
+                    <button class="add-to-cart"><i class="fas fa-shopping-cart"></i>Añadir a la Cesta</button>
                 </div>
-                <div class="politics">
-                    <img src="../img/iconos/icono_dinero.png">
-                    <p>Cuentas con 15 días desde que recibes tu prenda para devolverla</p>
+                <div class="product-politics">
+                    <div class="politics">
+                        <img src="../img/iconos/icono_camion.png">
+                        <p>Envios a toda Europa</p>
+                    </div>
+                    <div class="politics">
+                        <img src="../img/iconos/icono_dinero.png">
+                        <p>Cuentas con 15 días desde que recibes tu prenda para devolverla</p>
+                    </div>
+                    <div class="politics">
+                        <img src="../img/iconos/icono_seguridad.png">
+                        <p>Compra de forma segura</p>
+                    </div>
                 </div>
-                <div class="politics">
-                    <img src="../img/iconos/icono_seguridad.png">
-                    <p>Compra de forma segura</p>
-                </div>
-            </div>
-        </form>
-    </fieldset>
+            </form>
+        </fieldset>
+        <div id="notification" class="notification">
+            <p id="notificationMessage"></p>
+            <button onclick="cerrarNotificacion()">Cerrar</button>
+        </div>
+        <div class="modal" id="imageModal">
+            <span class="close" id="closeModal">&times;</span>
+            <img class="modal-content" id="modalImage">
+        </div>
+        <script src="../js/ficha.js"></script>
     </body>
 </html>
