@@ -152,10 +152,10 @@ document.addEventListener("DOMContentLoaded", function () {
   const checkboxCookies = document.getElementById("cookies");
   const correoInput = document.getElementById("correo");
 
-  if (!localStorage.getItem("popupMostrado")) {
+  if (!sessionStorage.getItem("popupMostrado")) {
     setTimeout(() => {
       popup.style.display = "flex";
-      localStorage.setItem("popupMostrado", "true");
+      sessionStorage.setItem("popupMostrado", "true");
     }, 3000);
   }
 
