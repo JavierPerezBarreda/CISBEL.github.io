@@ -545,9 +545,6 @@ div.scroll {
     max-height: 300px; /* Limita la altura de las imágenes para que no se estiren demasiado */
     object-fit: cover; /* Ajusta la imagen para que no se deforme */
   }
-    .vestidoimg:hover {
-      transform: scale(1.05); /* Aumentar ligeramente la imagen cuando el cursor pase por encima */
-    }
 
   img {border: 50px; max-width: 100%; height: auto;}
 
