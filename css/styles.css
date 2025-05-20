@@ -119,8 +119,6 @@ body {
   }
 
   /*fichas de articulos*/
-  .ficha-vest1{}
-
   .ficha-container{
     display: flex;
     flex-wrap: wrap;
@@ -950,9 +948,7 @@ div.scroll {
   transform: scale(0.8); /* Iniciar con un tamaño más pequeño */
 }
 
-.modal.show .modal-content {
-  transform: scale(1); /* Ampliar la imagen a su tamaño original al abrir el modal */
-}
+
 
 /* Botón de cerrar modal */
 .close {
