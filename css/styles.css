@@ -632,18 +632,7 @@ body {
 
 footer {text-align: center; background-color: #8b5e3c; color: #87644b;}
 
-.parallax {
-    /*"Parallax" se refiere a la imágen del fondo de la página.*/
-    background-image: url("../img/portada.png");
 
-    /*Cambia el tamaño.*/
-    min-height: 500px;
-  
-    /* Crea y modifica la imágen del fondo. */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;}
 
 /* Estilo para el contenedor que usará CSS Grid */
 .photo-grid {
