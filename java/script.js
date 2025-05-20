@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const images = document.querySelectorAll(".vestidoimg");
 
   // Verifica si las imágenes y el modal existen antes de añadir event listeners
-  if (images.length > 0 && modal && modalImage) {
+  /*if (images.length > 0 && modal && modalImage) {
       images.forEach(image => {
           image.addEventListener("click", () => {
               modal.style.display = "flex";  // Mostrar el modal
@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function () {
               }, 10); // Añadido un pequeño retraso para asegurarse de que la transición se active
           });
       });
-  }
+  }*/
 
   // Obtener los elementos del menú hamburguesa
   const menuToggle = document.querySelector('.menu-toggle'); // Selector correcto
