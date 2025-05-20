@@ -728,7 +728,7 @@ div.scroll {
     border-radius: 5px;  
     border-style: solid; 
     border-width: 1px; 
-    border-color: #ab4493; 
+    border-color: #000000; 
     margin-top: 10px;  
     padding-left: 10px;
     margin-bottom: 20px; 
@@ -748,7 +748,7 @@ div.scroll {
     border-radius: 5px;  
     border-style: solid; 
     border-width: 1px; 
-    border-color: #ab4493; 
+    border-color: #000000; 
     margin-top: 10px;  
     padding-left: 10px;
     margin-bottom: 20px; 
@@ -763,7 +763,7 @@ div.scroll {
   
   
   button {
-    background-color: #ff5b5b;
+    background-color: #8b5e3c;
     color: white;
     padding: 12px 20px;
     border: none;
@@ -785,7 +785,7 @@ div.scroll {
   
   
   span{
-    color: #ab4493; 
+    color: #700000; 
   }
   
   
@@ -828,13 +828,13 @@ div.scroll {
   
   .formulario input:focus{
     outline:0;
-    border: 1px solid #97d848;
+    border: 1px solid #87644b;
   }
   
   
   .formulario textarea:focus{
     outline:0;
-    border: 1px solid #97d848;
+    border: 1px solid #87644b;
   }
 
   .navbar {
